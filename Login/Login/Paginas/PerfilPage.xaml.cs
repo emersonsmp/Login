@@ -13,7 +13,7 @@ namespace Login.Paginas
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PerfilPage : ContentPage
 	{
-        private static string EnderecoURL = "https://smpsolutions.000webhostapp.com/Images/{0}";
+        private static string EnderecoURL = "https://SeuSite/Images/{0}";
 
         public PerfilPage (Resposta resposta)
 		{
