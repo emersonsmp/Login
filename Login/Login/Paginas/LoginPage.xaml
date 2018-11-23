@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login.Paginas.LoginPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Purple">
+            <StackLayout Margin="20">
+                
+                    <!-- Logo -->
+                <StackLayout Orientation="Vertical">
+                        <Image Source="Logo4.png"/>
+                </StackLayout>
+
+                <!-- Formulario de login e senha -->
+                <StackLayout Orientation="Vertical">
+
+                    <Entry x:Name="EmailEntry" Placeholder="Username" PlaceholderColor="Black" BackgroundColor="White" Opacity="0.25" />
+                    <Entry x:Name="PassEntry" IsPassword="True" Placeholder="Password" PlaceholderColor="Black" BackgroundColor="white" Opacity="0.25"/>
+                    <Button x:Name="BOTAO" Text="Log in" BackgroundColor="Transparent" TextColor="Black" BorderColor="white" BorderRadius="2" BorderWidth="2" Opacity="0.25"/>
+
+                    <!-- Esqueceu sua senha? -->
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <Label Text="Forgot your login details?" TextColor="white" Opacity="0.70" Font="12"/>
+
+                        <Label Text="Get help signing in" TextColor="white" FontAttributes="Bold" Font="12">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"  NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+                <StackLayout Grid.Row="5" Orientation="Vertical" BackgroundColor="White" Opacity="0.25" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Label Text="Don't have an account?" TextColor="Black"/>
+                        <Label Text=" "/>
+                        <Label Text="Register" TextColor="Black" FontAttributes="Bold" Font="15">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoRegistro" NumberOfTapsRequired="1"/>
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+                
+                
+            </Grid>
+            
+        </StackLayout>    
+    </ContentPage.Content>
+</ContentPage>
