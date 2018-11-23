@@ -13,7 +13,7 @@ namespace Login.Servico
         //Link Local Host: localhost/ApiLogin/api.php?login={0}/{1}
 
         //Link Servidor:
-        private static string EnderecoURL = "https://smpsolutions.000webhostapp.com/ApiLogin/api.php?login={0}/{1}";
+        private static string EnderecoURL = "https://SeuSite/api.php?login={0}/{1}";
 
         //RECEBE CEP DIGITADO
         public static Resposta LoginJson(string email, string senha)
