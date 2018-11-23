@@ -1,2 +1,0 @@
-Projeto no Xamarin Forms 2017:
-login em servidor com json, busca em servidor e nome para povoar pagina de perfil;
